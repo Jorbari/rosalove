@@ -35,7 +35,7 @@
 
         <section class="content__description">
             <p>
-                An <span>AI</span> that generates unique, personalize and beautiful love
+                An <span>AI</span> that generates unique, personalized and beautiful love
                 letters for your partner with no plagiarism
             </p>
         </section>
