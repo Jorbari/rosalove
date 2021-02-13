@@ -18,7 +18,7 @@
         & > span:first-child {
             color: rgba($dark_orange, .9);
         }
-        & > span:last-child {
+        & > span:nth-child(2) {
             background-image: $radient_gradient;
             -webkit-background-clip: text;
             color: transparent;
@@ -124,6 +124,12 @@
             border: none;
             font-size: 2rem;
             color: $color_white;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                background-color: rgba($dark_orange, .5);
+            }
         }
 
     }
@@ -143,7 +149,7 @@
         width: 100%;
         padding: 0 5%;
 
-        background-image: url('../../../img/background.png');
+        background-image: url("assets/img/background.png");
         background-repeat: no-repeat;
         background-position: bottom;
         background-attachment: fixed;
@@ -238,6 +244,7 @@
             font-family: $silka;
             font-weight: 600;
             color: rgba(63, 201, 106, 0.9);
+            transition: all .3s ease-in-out;
 
             &:first-child {
                 background: transparent;
@@ -261,11 +268,20 @@
     position: fixed;
     bottom: 1rem;
     right: 3rem;
-    background-color: #f9a83e;
-    padding: 1rem 4rem;
+    // background-color: #f9a83e;
+    // padding: 1rem 4rem;
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+
+    & > span > svg {
+        width: 3rem;
+        height: 3rem
+    }
 
     & > p {
         font-size: 1.3rem;
-        letter-spacing: 2px;
+        // letter-spacing: 2px;
+        color: $color_white;
     }
 }
