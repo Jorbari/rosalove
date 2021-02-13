@@ -1,16 +1,5 @@
 
 .nav__bar {
-    // width: calc(100% - 20%);
-    // margin: 0 auto;
-    // padding-top: 6.4rem;
-    // display: flex;
-    // justify-content: space-between;
-    // margin-bottom: 7.2rem;
-    // position: -webkit-sticky; 
-    // position: sticky;
-    // top: 0;
-    // z-index: 2;
-
     padding: 2.4rem 13rem;
     display: flex;
     justify-content: space-between;
@@ -55,11 +44,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     
 
     &.content__top {
         margin: auto auto;
-
     }
 
     &__heading {
@@ -67,7 +56,7 @@
 
         & > h1 {
             font-weight: 600;
-            font-family: $silka;
+            font-family: $silka_bold;
             line-height: 10.1rem;
             font-size: 7rem;
             text-align: center;
@@ -164,18 +153,38 @@
             object-fit: cover;
             width: 100%;
         }
+
+        @media #{$xs_mobile} {
+            background-position: right;
+          }
+    }
+    &.content__position {
+        position: absolute;
+        top: 87%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
     }
 
     &__cards {
         display: flex;
         flex-direction: column;
         gap: 2.4rem 0;
+        width: calc(100% - 20%);
+        
+        @media #{$laptop} {
+            width: calc(100% - 35%);
+        }
+        @media #{$large_screens} {
+            width: calc(100% - 35%);
+            max-width: 60%;
+        }
 
         &::after {
             content: '';
             width: 100%;
             height: 100%;
-            background: black;
+            background: $color_black;
 
         }
     }
@@ -185,8 +194,6 @@
         backdrop-filter: blur(13rem);
         border-radius: 2.6736rem;
         padding: 3rem;
-        width: 91.1rem;
-        
 
         & > p {
             font-family: $silka;
@@ -204,6 +211,7 @@
             color: transparent;
             text-transform: none;
             font-style: normal;
+            font-family: $silka_bold;
         }
 
         & > p > span:nth-child(2) {
@@ -238,8 +246,26 @@
             &:last-child {
                 background: rgba(140, 238, 151, 0.15);
             }
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(140, 238, 151, 0.15);
+                color: rgba(63, 201, 106, 0.9);
+            }
         }
     }
 
 
+}
+
+.contributor {
+    position: fixed;
+    bottom: 1rem;
+    right: 3rem;
+    background-color: #f9a83e;
+    padding: 1rem 4rem;
+
+    & > p {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
 }
