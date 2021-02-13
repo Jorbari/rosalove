@@ -18,7 +18,7 @@
         & > span:first-child {
             color: rgba($dark_orange, .9);
         }
-        & > span:last-child {
+        & > span:nth-child(2) {
             background-image: $radient_gradient;
             -webkit-background-clip: text;
             color: transparent;
@@ -90,6 +90,11 @@
             width: calc(100% - 20%);
             margin: 0 auto;
             text-align: center;
+
+            & > span {
+                font-weight: bold;
+                font-style: italic;
+            }
         }
     }
 
@@ -124,6 +129,12 @@
             border: none;
             font-size: 2rem;
             color: $color_white;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                background-color: rgba($dark_orange, .5);
+            }
         }
 
     }
@@ -143,7 +154,7 @@
         width: 100%;
         padding: 0 5%;
 
-        background-image: url('../../../img/background.png');
+        background-image: url("assets/img/background.png");
         background-repeat: no-repeat;
         background-position: bottom;
         background-attachment: fixed;
@@ -238,6 +249,7 @@
             font-family: $silka;
             font-weight: 600;
             color: rgba(63, 201, 106, 0.9);
+            transition: all .3s ease-in-out;
 
             &:first-child {
                 background: transparent;
