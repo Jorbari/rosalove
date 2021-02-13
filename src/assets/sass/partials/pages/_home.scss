@@ -37,6 +37,10 @@
             font-family: $dm_sans;
         }
     }
+
+    @media #{$xs_mobile} {
+        padding: 2.4rem 5rem;
+    }
     
 }
 
@@ -60,6 +64,13 @@
             line-height: 10.1rem;
             font-size: 7rem;
             text-align: center;
+
+            @media #{$xs_mobile} {
+                font-size: 6rem;
+                padding: 0 4.4rem;
+                line-height: 123%;
+            }
+
         }
         & > h1 > span {
             background-image: $radient_gradient;
@@ -74,6 +85,11 @@
             top: 0;
             right: -3%;
             top: 46%;
+            display: initial;
+
+            @media #{$xs_mobile} {
+                display: none !important;
+            }
         }
 
     }
@@ -94,6 +110,11 @@
             & > span {
                 font-weight: bold;
                 font-style: italic;
+            }
+
+            @media #{$xs_mobile} {
+                font-size: 2.5rem;
+                line-height: 128%;
             }
         }
     }
@@ -135,6 +156,16 @@
             &:hover {
                 background-color: rgba($dark_orange, .5);
             }
+            @media #{$xs_mobile} {
+                padding: 2.6rem 2.7rem;
+    
+            }
+        }
+
+        @media #{$xs_mobile} {
+            max-width: 58.3rem;
+            padding: 1rem 1rem 1rem 2rem;
+
         }
 
     }
@@ -166,7 +197,8 @@
         }
 
         @media #{$xs_mobile} {
-            background-position: right;
+            background-position: center;
+            background-image: url("assets/img/mobile.png");
           }
     }
     &.content__position {
@@ -189,6 +221,9 @@
         @media #{$large_screens} {
             width: calc(100% - 35%);
             max-width: 60%;
+        }
+        @media #{$xs_mobile} {
+            width: calc(100% - 6%);
         }
 
         &::after {
@@ -225,6 +260,15 @@
             font-family: $silka_bold;
         }
 
+        svg {
+
+            @media #{$xs_mobile} {
+                width: 5rem;
+                height: 2rem;
+            }
+
+        }
+
         & > p > span:nth-child(2) {
             padding: 0 2rem;
             text-align: justify;
@@ -237,6 +281,10 @@
             margin-top: 4.4rem;
             gap: 1.5rem;
             justify-content: flex-end;
+
+            @media #{$xs_mobile} {
+                justify-content: center;
+            }
         }
         & > .share > button {
             border: 1px solid #3FC96A;
@@ -273,8 +321,6 @@
     position: fixed;
     bottom: 1rem;
     right: 3rem;
-    // background-color: #f9a83e;
-    // padding: 1rem 4rem;
     display: flex;
     gap: .6rem;
     align-items: center;
@@ -286,7 +332,6 @@
 
     & > p {
         font-size: 1.3rem;
-        // letter-spacing: 2px;
         color: $color_white;
     }
 }
