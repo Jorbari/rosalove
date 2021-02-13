@@ -1,0 +1,44 @@
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 68.5%;
+
+  @media #{$lg} {
+    font-size: 70%;
+  }
+
+  @media #{$md} {
+    font-size: 60%;
+  }
+
+  @media #{$xs} {
+    font-size: 53%;
+  }
+
+  @media #{$sm} {
+    font-size: 45%;
+  }
+
+  @media #{$small_mobile} {
+    font-size: 40%;
+  }
+
+  @media #{$xs_mobile} {
+    font-size: 30%;
+  }
+
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $primary_color;
+}
+
+

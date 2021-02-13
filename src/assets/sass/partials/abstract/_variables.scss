@@ -1,0 +1,33 @@
+// colors
+$primary_color: #171717;
+$dark_orange:#DB342B;
+$color_white: #ffffff;
+$radient_gradient: radial-gradient(farthest-side at 100% 70%,#F5F2E4, #F9A334, );
+$color_black: black;
+
+$light_dark: rgba(255, 255, 255, 0.09);
+
+// fonts
+$silka: "silkaregular", sans-serif;
+$silka_bold: "silkabold", sans-serif;
+$dm_sans: 'DM Sans', sans-serif;
+
+
+/*
+    ****************
+    ****************
+    ****************
+*/
+
+// Responsive
+$large_screens: 'only screen and (min-width: 1600px)';
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$lg :'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+
+
+$small_mobile:'(max-width: 576px)';
+$xs_mobile:'(max-width: 420px)';
+$sm_mobile:'only screen and (min-width: 421px) and (max-width: 575px)';
