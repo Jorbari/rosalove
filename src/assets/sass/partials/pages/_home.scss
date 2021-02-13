@@ -90,6 +90,11 @@
             width: calc(100% - 20%);
             margin: 0 auto;
             text-align: center;
+
+            & > span {
+                font-weight: bold;
+                font-style: italic;
+            }
         }
     }
 
