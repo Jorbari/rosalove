@@ -140,6 +140,12 @@
         width: 100%;
         padding: 0 5%;
 
+        background-image: url('../../../img/background.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+
         & > img {
             object-fit: cover;
             width: 100%;
