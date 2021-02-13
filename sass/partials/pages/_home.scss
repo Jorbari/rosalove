@@ -1,11 +1,25 @@
 
 .nav__bar {
-    width: calc(100% - 20%);
-    margin: 0 auto;
-    padding-top: 6.4rem;
+    // width: calc(100% - 20%);
+    // margin: 0 auto;
+    // padding-top: 6.4rem;
+    // display: flex;
+    // justify-content: space-between;
+    // margin-bottom: 7.2rem;
+    // position: -webkit-sticky; 
+    // position: sticky;
+    // top: 0;
+    // z-index: 2;
+
+    padding: 2.4rem 13rem;
     display: flex;
     justify-content: space-between;
     margin-bottom: 7.2rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    background: $primary_color;
 
     &__logo__name > h3 {
         font-size: 2rem;
@@ -142,7 +156,7 @@
 
         background-image: url('../../../img/background.png');
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: bottom;
         background-attachment: fixed;
         height: 100vh;
 
