@@ -198,6 +198,14 @@
             color: rgba($color_white, .7);
         }
 
+        i {
+            background-image: $radient_gradient;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-transform: none;
+            font-style: normal;
+        }
+
         & > p > span:nth-child(2) {
             padding: 0 2rem;
             text-align: justify;

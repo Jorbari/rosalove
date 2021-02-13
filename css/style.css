@@ -144,6 +144,12 @@ body {
       position: relative;
       display: flex;
       color: rgba(255, 255, 255, 0.7); }
+    .content__cards > .card i {
+      background-image: radial-gradient(farthest-side at 100% 70%, #F5F2E4, #F9A334);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-transform: none;
+      font-style: normal; }
     .content__cards > .card > p > span:nth-child(2) {
       padding: 0 2rem;
       text-align: justify; }
