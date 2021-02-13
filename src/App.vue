@@ -36,7 +36,7 @@
         <section class="content__description">
             <p>
                 Generate unique, personalize and beautiful love
-                letters for your partner with no plagiarism 
+                letters for your partner with no plagiarism
             </p>
         </section>
 
@@ -157,8 +157,8 @@ export default {
     },
 
     tweetletter(letter){
-      var text = 'Dear '+ this.readername+'! ' + letter + '(From RosaLove.ai)';
-      var url = "http://rosalove.ai";
+      var text = 'Dear '+ this.readername+'! ' + letter;
+      var url = "http://rosalove.xyz";
       window.open('http://twitter.com/share?url='+encodeURIComponent(url)+'&text='+encodeURIComponent(text), '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
     },
 
