@@ -285,6 +285,17 @@
             @media #{$xs_mobile} {
                 justify-content: center;
             }
+
+            @media not all and (min-resolution:.001dpcm)
+            { @supports (-webkit-appearance:none) {
+               
+                & > .share > button:first-child {
+                    margin-right: 1.5rem;
+                }
+
+            }}
+
+
         }
         & > .share > button {
             border: 1px solid #3FC96A;
