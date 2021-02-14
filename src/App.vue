@@ -42,7 +42,7 @@
 
         <section class="content__search">
 
-            <input type="text" v-model="readername" placeholder="Message for?  e.g “My girlfriend”">
+            <input type="text" v-model="readername" @keyup.enter="getletter()" placeholder="Message for?  e.g “My girlfriend”">
             <button @click="getletter()">Generate</button>
 
         </section>
@@ -76,7 +76,7 @@
                 <section class="share">
 
                     <button @click="tweetletter(letter)">Tweet</button>
-                    <button @click="coypletter(letter)">Copy Text</button>
+                    <button @click="coypletter($event, letter)">Copy Text</button>
 
                 </section>
 
@@ -152,8 +152,12 @@ export default {
   },
 
   methods:{
-    coypletter(letter) {
+    coypletter(event, letter) {
       navigator.clipboard.writeText('Dear '+ this.readername+'! ' + letter);
+      event.target.innerHTML = "Text Copied!!!";
+      setTimeout( () => { 
+        event.target.innerHTML = "Copy Text";
+      }, 2000 );
     },
 
     tweetletter(letter){
