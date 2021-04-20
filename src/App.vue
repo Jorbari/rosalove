@@ -166,7 +166,7 @@ export default {
       this.letters = notes;
     },
     getletter(){
-      var baseURL = "https://rroo-y2w9w.ondigitalocean.app/loveletterlong";
+      var baseURL = "https://rosalove-emekaborisama.cloud.okteto.net/loveletterlong";
 
       axios({
         method: "post",
