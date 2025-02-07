@@ -1,9 +1,10 @@
 # rosalove.ai
 
 ## Designs and UX
-```
+
 Visual screens and experice designed by Moyinoluwa Olufisayo
-[Link to Figma Designs](https://www.figma.com/design/PCOr6lSZ30dR67ofFLojuf/Valentine-(Rosa-Love)?node-id=0-1&t=i8ewoBZKbYTytr4v-1)
+
+[**Link to Figma Designs**](https://www.figma.com/design/PCOr6lSZ30dR67ofFLojuf/Valentine-(Rosa-Love)?node-id=0-1&t=i8ewoBZKbYTytr4v-1)
 
 
 ```
